@@ -1,0 +1,79 @@
+@font-face{
+  
+  font-family: 'myFont';
+  
+  src:
+  url('./fonts/Archangelsk.ttf') format('truetype');
+  
+  font-weight: normal;
+  
+  font-style: normal;
+  
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  text-align: center;
+}
+.converter {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+  width: 500px;
+  /* background-color: #D3D3D3; */
+  float: left;
+  margin-left: 70px;
+  margin-right: 70px;
+  position: relative;
+  /* kk */
+}
+/* #form firs{
+  margin-top: 0;
+} */
+body {
+  background-color: rgba(124, 100, 100, 0.14);
+}
+.app {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 15%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  height: 500px;
+  position: relative;
+}
+
+.header {
+  font-family: myFont;
+  font-size: 40px;
+  float: left;
+  width: 150px;
+  top:0px;
+}
+.invisible {
+  visibility: hidden;
+}
+select, input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+}
+
+#submit {
+  border: 2px solid #ccc;
+  font-size: 20px;
+  background-color: #999696;
+  width: 100px;
+  font-family: 'Roboto Slab';
+  height:35px;
+
+} 
+.result {
+  height: 50px;
+}

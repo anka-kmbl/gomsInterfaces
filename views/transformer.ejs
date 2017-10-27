@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Converter</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+	</style>
+</head>
+<body>
+
+  <div class="app">
+    <div class="header">
+			<span>Convert</span>
+			<span>Decimal</span>
+      <span>Numbers</span>
+    </div>
+    <div class="converter">
+      <form id="form">
+        
+          
+          <p>Enter decimal number: 
+          <input type="number" id="num1" required/> </p>
+         
+          <p>Choose number system to convert into:
+          <select>
+              <option value="hexadecimal">hexadecimal</option>
+              <option value="octal">octal</option>
+              <option value="binary">binary</option>
+              <option value="ternary">ternary</option>
+          </select>
+          </p>
+          <p><input type="submit" id="submit" value="convert"/></p>
+			</form>
+			<div class="result invisible">
+					<p></p>
+			</div>
+      
+    </div>
+		
+  </div>
+  
+  <script src="/javascripts/decimal-binary.js"></script>  
+</body>
+
+</html>
