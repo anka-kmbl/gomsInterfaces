@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 // var users = require('./routes/users');
 
 const interfaces = require('./routes/converter');
-
+const allInterfaces = require('./routes/interfaces');
 
 var app = express();
 
@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/', routes);
 // app.use('/users', users);
 app.use('/', interfaces);
+app.use('/api/interfaces', allInterfaces);
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
