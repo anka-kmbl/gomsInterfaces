@@ -13,26 +13,38 @@
     </div>
     <div class="converter" ng-app="myApp" ng-controller="myCtrl">
 
+            <div><span class = "desc">Decimal: </span><input type="text" id = "raw" ng-model="firstName" autofocus></div>
+            <br> <div><span class = "desc">Base: </span><input id = "base" type="text" ng-model="lastName"><br>
+            </div>
+            <br> <div> <span class = "desc">Result:</span> {{!(isNan(+firstName)) && ((+lastName == 2) || +lastName == 8 || +lastName == 16 || +lastName == 3) ?(+firstName).toString(+lastName) : error}}
+                </div>
 
-            <span>Enter decimal number: </span><input type="number" ng-model="firstName"><br>
-            <span>Base: </span><input type="number" ng-model="lastName"><br>
-            <br>
-            <span>Result</span>: {{(+firstName).toString(+lastName)}}
 
-        
 
 
     </div>
-
-  </div>
+    <div id = 'error' style = "opacity: 0"> check input </div>
+</div>
 
 <script>
+
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
     $scope.firstName = "5";
     $scope.lastName = "2";
+    $scope.error = 'check input';
 });
 </script>
+
+<script>
+let raw = document.getElementById('raw');
+raw.onblur = function() {
+  if (isNaN(this.value)) { // введено не число
+    // показать ошибку
+    document.getElementById('error').style.opacity = '1 ';
+  }
+};
+</scipt>
 
 </body>
 </html>
