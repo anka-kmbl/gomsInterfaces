@@ -1,4 +1,4 @@
-let num1 = document.getElementById('num1');
+ 	let num1 = document.getElementById('num1');
 let system2 = document.querySelectorAll('select')[0];
 let form = document.getElementById('form');
 
