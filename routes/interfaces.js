@@ -8,6 +8,16 @@ router.get('/first', (req, res) => {
 
 router.get('/second', (req, res) => {
 	res.render('buttonless');
+});
+
+router.get('/third', (req, res) => {
+	res.render('convRadio');
+});
+
+router.get('/fourth', (req, res) => {
+	res.render('pointers');
 })
+
+
 
 module.exports = router;

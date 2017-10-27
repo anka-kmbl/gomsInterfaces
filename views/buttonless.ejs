@@ -14,8 +14,8 @@
     <div class="converter" ng-app="myApp" ng-controller="myCtrl">
 
 
-            <span>Decimal: </span><input type="text" ng-model="firstName"><br>
-            <span>Base: </span><input type="text" ng-model="lastName"><br>
+            <span>Enter decimal number: </span><input type="number" ng-model="firstName"><br>
+            <span>Base: </span><input type="number" ng-model="lastName"><br>
             <br>
             <span>Result</span>: {{(+firstName).toString(+lastName)}}
 

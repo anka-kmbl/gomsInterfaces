@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Converter</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+	<!-- <style>
+	@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+	</style> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+
+  <div class="app">
+    <div class="header">
+			<span>Convert</span>
+			<span>Decimal</span>
+      <span>Numbers</span>
+    </div>
+    <div class="converter" ng-app="myApp" ng-controller="myCtrl">
+      <form id="form">
+        
+          
+          <p>Enter decimal number and base: 
+          <input type="text" id="num1" placeholder="12, 2" required autofocus ng-model="nums"/> </p>
+      
+          <!-- <p>Choose number system to convert into:
+          <select>
+              <option value="hexadecimal" name = "base">hexadecimal</option>
+              <option value="octal" name = "base">octal</option>
+              <option value="binary" name = "base">binary</option>
+              <option value="ternary" name = "base">ternary</option>
+          </select>
+					</p> -->
+					<div class="results">
+						<p>Your number {{ nums.split(',')[0] }}</p>
+						<p>Base {{nums.split(',')[1] }}</p>
+						<p>Result {{ nums != "" ? (+nums.split(',')[0]).toString((+nums.split(',')[1])) : 0 }}</p>
+					
+					</div>
+          <!-- <p><input type="submit" id="submit" value="convert"/></p> -->
+			</form>
+			<div class="result invisible">
+					<p></p>
+			</div>
+      
+    </div>
+		
+  </div>
+  
+	<script>
+		  
+			var app = angular.module('myApp', []);
+			app.controller('myCtrl', function($scope) {
+				  $scope.nums = "";
+					$scope.decNum = "";
+					$scope.base = "";
+			});
+			</script>
+</body>
+
+</html>

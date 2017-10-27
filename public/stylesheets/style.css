@@ -16,6 +16,16 @@ p {
   font-size: 20px;
   text-align: center;
 }
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results p {
+  width: 250px;
+  align-self: center;
+}
 .converter {
   /* display: flex;
   flex-direction: column;
@@ -58,7 +68,7 @@ body {
 .invisible {
   visibility: hidden;
 }
-select, input {
+select, input, button {
   border: 2px solid #ccc;
   border-radius: 4px;
   width: 100px;
@@ -76,4 +86,12 @@ select, input {
 } 
 .result {
   height: 50px;
+}
+
+button > a {
+  text-decoration: none;
+}
+
+#radioAlign {
+  text-align: left;
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Converter</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+	<!-- <style>
+	@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+	</style> -->
+</head>
+<body>
+
+  <div class="app">
+    <div class="header">
+			<span>Convert</span>
+			<span>Decimal</span>
+      <span>Numbers</span>
+    </div>
+    <div class="converter">
+      <form id="formRadio">
+        
+          
+          <p>Enter decimal number: 
+          <input type="number" id="num1" required/> </p>
+         
+          <p>Choose number system to convert into:</p>
+          
+          <p id="radioAlign"><input type="radio" id="hex" name="radioSys" value="16" / checked>
+          <label for="hex">hexadecimal</label></p>
+          
+          <p id="radioAlign"><input type="radio" id="octal" name="radioSys" value="8" / >
+          <label for="octal">octal</label></p>
+          
+          <p id="radioAlign"><input type="radio" id="binary" name="radioSys" value="2" / >
+          <label for="binary">binary</label></p>
+          
+          <p id="radioAlign"><input type="radio" id="ternary" name="radioSys" value="3" / >
+          <label for="ternary">ternary</label></p>
+          
+          
+          <p><input type="submit" id="submit" value="convert"/></p>
+			</form>
+			<div class="result invisible">
+					<p></p>
+			</div>
+      
+    </div>
+		
+  </div>
+  
+  <script src="/javascripts/radioInterface.js"></script>  
+</body>
+
+</html>
